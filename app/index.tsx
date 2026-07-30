@@ -1,15 +1,9 @@
-import { Text, View } from "react-native";
-
+import Game from "@/src/components/Game";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Game />
+    </GestureHandlerRootView>
   );
 }
